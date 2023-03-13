@@ -5,3 +5,5 @@ function solution(n) {
     }
     return answer;
 }
+
+// Array(n).fill(0)
