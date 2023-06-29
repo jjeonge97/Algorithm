@@ -1,6 +1,5 @@
 function solution(babbling) {
     let words = ['aya', 'ye', 'woo', 'ma']
-    let count = 0;
     
     for(let i = 0; i < babbling.length; i++) {
         for(let j = 0; j < words.length; j++) {
@@ -9,6 +8,7 @@ function solution(babbling) {
             }
         }
     }
+    
 
    return babbling.map(el => el.replaceAll('x', '')).filter(el => el === '').length
 
