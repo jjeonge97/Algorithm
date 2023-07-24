@@ -1,7 +1,5 @@
 function solution(my_string) {
-    var answer = [];
-    for(let i = 0; i < my_string.length; i++) {
-        if(!isNaN(my_string[i])) answer.push(Number(my_string[i]))
-    }
-    return answer.sort((a,b) => a -b);
+    
+    //return my_string.split('').map(el => el === 0 ? 0 : parseInt(el))
+    return my_string.split('').filter(el => !isNaN(el)).map(el => +el).sort()
 }
